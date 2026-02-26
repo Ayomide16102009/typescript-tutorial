@@ -1,21 +1,17 @@
-import React from 'react';
+import React, { use, useState } from 'react';
 import './App.css';
+import InputFeild from './component/InputFeild';
 
-let name: string;
-let age: number;
-let isStudent: boolean;
-let hobbies: string[];
-let role: [string, number];
+const App: React.FC = () => {
+  const [todo, setTodo] = useState<string>('');
 
-type Person = {
-  name: string;
-  age: number;
-  isStudent: boolean;
+  return (
+    <div className="App">
+      <span className='heading'>Taskify</span>
+      <InputFeild todo={todo} setTodo={setTodo}/>
+
+    </div>
+  );
 };
-
-function App() {
-  return <div className="App">Hello World</div>;
-
-}
 
 export default App;
