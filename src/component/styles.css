@@ -67,7 +67,7 @@
 }
 
 .todos__single--text:focus {
-  outline: none;
+  /* outline: none; */
 }
 
 .icon {
@@ -76,7 +76,7 @@
   cursor: pointer;
 }
 
-/* @media (max-width: 1200px) {
+@media (max-width: 1200px) {
   .todos__single {
     width: 40%;
   }
@@ -92,4 +92,4 @@
   .todos__single {
     width: 100%;
   }
-} */
+}
